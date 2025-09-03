@@ -1,20 +1,30 @@
 import React from "react";
-import Hero from "./components/Hero";
+import Hero from "./components/sections/Hero";
+import TechStack from "./components/sections/TechStack";
+import Contact from "./components/sections/Contect";
+import { FloatingNavDemo } from "./components/sections/NEvbar";
+import { ThreeDMarqueeDemo } from "./components/sections/Project";
+import { StickyScrollRevealDemo } from "./components/sections/content";
 
 const App = () => {
   return (
     <main>
-      <img
-        className="absolute top-0 right-0 opacity-60 -z-10"
-        src="/gradient.png"
-        alt="Gradiant-img"
-      />
-      <div className="h-0 w-[40rem] absolute top-[20%] right-[-5%] 
-      shadow-[0_0_900px_20px_#e99b63] -rotate-[30deg] -z-10"></div>
-
-      <div>
-        <Hero/>
-      </div>
+      <FloatingNavDemo />
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="content">
+        <StickyScrollRevealDemo />
+      </section>
+      <section id="tech">
+        <TechStack />
+      </section>
+      <section id="projects">
+        <ThreeDMarqueeDemo />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
     </main>
   );
 };
