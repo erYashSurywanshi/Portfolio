@@ -6,6 +6,7 @@ import { FloatingNavDemo } from "./components/sections/NEvbar";
 import { ThreeDMarqueeDemo } from "./components/sections/Project";
 import { StickyScrollRevealDemo } from "./components/sections/content";
 import { BackgroundBoxesDemo } from "./components/Models/TechLogos/BackgroundDemo";
+import Footer from "./components/sections/Footer";
 
 const App = () => {
   return (
@@ -20,18 +21,19 @@ const App = () => {
       <section id="hero">
         <Hero />
       </section>
-      <section id="content">
+      <section id="projects">
         <StickyScrollRevealDemo />
       </section>
       <section id="tech">
         <TechStack />
       </section>
-      <section id="projects">
+      <section id="content">
         <ThreeDMarqueeDemo />
       </section>
       <section id="contact">
         <Contact />
       </section>
+      <Footer/>
     </main>
   );
 };
