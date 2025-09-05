@@ -5,10 +5,17 @@ import Contact from "./components/sections/Contect";
 import { FloatingNavDemo } from "./components/sections/NEvbar";
 import { ThreeDMarqueeDemo } from "./components/sections/Project";
 import { StickyScrollRevealDemo } from "./components/sections/content";
+import { BackgroundBoxesDemo } from "./components/Models/TechLogos/BackgroundDemo";
 
 const App = () => {
   return (
-    <main>
+    <main className="relative">
+      {/* Full body background */}
+      <div className="fixed inset-0 -z-10 w-full">
+        <BackgroundBoxesDemo />
+      </div>
+
+      {/* Foreground Content */}
       <FloatingNavDemo />
       <section id="hero">
         <Hero />

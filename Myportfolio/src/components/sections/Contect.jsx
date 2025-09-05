@@ -4,6 +4,7 @@ import TitleHeader from "../TitleHeader.jsx";
 import ExpContent from "../expContent.jsx";
 import { TextHoverEffect } from "../ui/text-hover-effect.js";
 import { TextRevealCard, TextRevealCardDescription, TextRevealCardTitle } from "../ui/text-reveal-card.js";
+import { BackgroundBoxesDemo } from "../Models/TechLogos/BackgroundDemo.jsx";
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -27,10 +28,12 @@ const Contact = () => {
 
   return (
     <section id="contact" className="flex-center section-padding">
+       
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
           sub="💬 Have questions or ideas? Let’s talk! 🚀"
         />
+        
         <div className="flex items-center justify-center ">
         <TextRevealCard
        className=' h-[10rem] w-20rem flex items-center justify-center'
