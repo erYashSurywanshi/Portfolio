@@ -5,8 +5,11 @@ import { ColourfulText } from "./ui/text";
 import { BackgroundBoxesDemo } from "./Models/TechLogos/BackgroundDemo";
 
 const AnimatedCounter = () => {
+
+  
+
   return (
-    <div className="w-full px-4 md:px-8 lg:px-20 py-16 z-10">
+    <div className=" animation-counter w-full px-4 md:px-8 lg:px-20 py-16 z-10">
       
 
       {/* Heading */}

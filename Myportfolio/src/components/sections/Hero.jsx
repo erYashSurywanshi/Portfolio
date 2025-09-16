@@ -24,6 +24,9 @@ const Hero = () => {
       );
     });
 
+    
+    
+
     // cleanup to avoid duplicate animations on re-render
     return () => ctx.revert();
   }, []);
@@ -96,7 +99,7 @@ const Hero = () => {
         </div>
 
         {/* Animated Counter */}
-        <AnimatedCounter />
+        <AnimatedCounter className='AnimatedCounter' />
       </section>
     </div>
   );
